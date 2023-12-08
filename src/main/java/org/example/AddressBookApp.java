@@ -17,17 +17,18 @@ import java.util.Scanner;
 @SuppressWarnings("java:S106")
 public class AddressBookApp {
 
-    private static final String CONTACTS_JSON = "contacts.json";
+    private static final String JSON_FILE = "contacts";
 
     public static void main(String[] args) {
+        String contactsFile = System.getProperty(JSON_FILE, null);
         AddressBookApp addressBookApp = new AddressBookApp();
-        addressBookApp.initiateAddressBook();
+        addressBookApp.initiateAddressBook(contactsFile);
     }
 
-    public void initiateAddressBook() {
+    public void initiateAddressBook(String filePath) {
         AddressBook addressBook = new AddressBookImpl();
         // for preloading some data from json file
-        loadData(addressBook);
+        loadData(filePath, addressBook);
         Scanner scanner = new Scanner(System.in);
         String shouldContinue = "y";
         while (Objects.equals(shouldContinue, "y") || Objects.equals(shouldContinue, "Y")) {
@@ -56,8 +57,11 @@ public class AddressBookApp {
         }
     }
 
-    private void loadData(AddressBook addressBook) {
-        List<Contact> contacts = DataLoader.loadData(CONTACTS_JSON, Contact.class) ;
+    private void loadData(String filePath, AddressBook addressBook) {
+        if (Objects.isNull(filePath)) {
+            return;
+        }
+        List<Contact> contacts = DataLoader.loadData(filePath, Contact.class) ;
         for(Contact c: contacts) {
             String firstName = c.getFirstName();
             String lastName = c.getLastName();
