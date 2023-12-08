@@ -1,0 +1,23 @@
+[
+  {"firstName":"John","lastName":"Doe","phone":"1234567890","address":"123 Main St"},
+  {"firstName":"Alice","lastName":"Smith","phone":"9876543210","address":"456 Elm St"},
+  {"firstName":"John","lastName":"Doe","phone":"2345678901","address":"789 Oak St"},
+  {"firstName":"Bob","lastName":"Johnson","phone":"3456789012","address":"101 Pine St"},
+  {"firstName":"Alice","lastName":"Smith","phone":"4567890123","address":"202 Cedar St"},
+  {"firstName":"Eva","lastName":"Brown","phone":"5678901234","address":"303 Maple St"},
+  {"firstName":"David","lastName":"Williams","phone":"6789012345","address":"404 Birch St"},
+  {"firstName":"Charlie","lastName":"Jones","phone":"7890123456","address":"505 Walnut St"},
+  {"firstName":"Alice","lastName":"Johnson","phone":"8901234567","address":"606 Cherry St"},
+  {"firstName":"Bob","lastName":"Williams","phone":"9012345678","address":"707 Spruce St"},
+  {"firstName":"Alice","lastName":"Doe","phone":"0123456789","address":"808 Pineapple St"},
+  {"firstName":"David","lastName":"Brown","phone":"0987654321","address":"909 Orange St"},
+  {"firstName":"John","lastName":"Smith","phone":"7654321098","address":"111 Strawberry St"},
+  {"firstName":"Eva","lastName":"Johnson","phone":"8765432109","address":"222 Blueberry St"},
+  {"firstName":"Charlie","lastName":"Doe","phone":"8976543210","address":"333 Raspberry St"},
+  {"firstName":"Bob","lastName":"Smith","phone":"6578901234","address":"444 Lemon St"},
+  {"firstName":"Alice","lastName":"Jones","phone":"7689012345","address":"555 Lime St"},
+  {"firstName":"David","lastName":"Doe","phone":"8790123456","address":"666 Grape St"},
+  {"firstName":"John","lastName":"Brown","phone":"9801234567","address":"777 Mango St"},
+  {"firstName":"Eva","lastName":"Smith","phone":"9912345678","address":"888 Kiwi St"},
+  {"firstName":"Eva smith","lastName":"","phone":"9912345679","address":"888 Apple St"}
+]
